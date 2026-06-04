@@ -12,7 +12,7 @@ import type { NavItem } from '@/types';
 export function NavMain({ items = [] }: { items: NavItem[] }) {
     const { auth } = usePage().props;
     const { isCurrentUrl } = useCurrentUrl();
-    const arrayPermission = auth?.permissions;
+    const arrayPermission = auth?.user.permissions;
 
     return (
         <SidebarGroup className="px-2 py-0">

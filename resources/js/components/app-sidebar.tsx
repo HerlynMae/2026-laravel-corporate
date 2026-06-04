@@ -101,12 +101,12 @@ const mainNavItems: NavItem[] = [
         icon: KeyRound,
         permission: 'manage departments',
     },
-    // {
-    //     title: 'Users',
-    //     href: users.index(),
-    //     icon: KeyRound,
-    //     permission: 'manage users',
-    // },
+    {
+        title: 'Users',
+        href: dashboard(),
+        icon: KeyRound,
+        permission: 'manage users',
+    },
     {
         title: 'Roles',
         href: roles.index(),

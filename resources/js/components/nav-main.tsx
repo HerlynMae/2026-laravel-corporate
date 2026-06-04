@@ -21,7 +21,7 @@ export function NavMain({ items = [] }: { items: NavItem[] }) {
                 {items.map((item) => {
                     if (
                         item.permission &&
-                        !arrayPermission.find((val) => val == item.permission)
+                        !arrayPermission?.find((val) => val == item.permission)
                     ) {
                         return;
                     }
